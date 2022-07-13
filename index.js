@@ -190,7 +190,7 @@
      * @return {Promise}
      */
     async function subscribeUserToPush(registration, publicKey) {
-        // await navigator.serviceWorker.ready
+        await navigator.serviceWorker.ready
         var subscribeOptions = {
             userVisibleOnly: true,
             applicationServerKey: window.urlBase64ToUint8Array(publicKey)
