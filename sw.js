@@ -8,9 +8,7 @@ var cacheFiles = [
     './index.html',
     './base64util.js',
     './index.js',
-    './style.css',
-    './img/book.png',
-    './img/loading.svg'
+    './style.css'
 ];
 
 // 监听install事件，安装完成后，进行文件缓存
