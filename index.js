@@ -209,7 +209,7 @@
      * @return {Promise}
      */
     function sendSubscriptionToServer(body, url) {
-        url = url || 'http://10.1.130.69/subscription';
+        url = url || '/subscription';
         return new Promise(function (resolve, reject) {
             var xhr = new XMLHttpRequest();
             xhr.timeout = 60000;
@@ -286,6 +286,7 @@
 
             // 为了方便之后的推送，为每个客户端简单生成一个标识
             body.uniqueid = new Date().getTime();
+            console.log('body: ', JSON.stringify(body))
             console.log('uniqueid', body.uniqueid);
 
             // 将生成的客户端订阅信息存储在自己的服务器上
