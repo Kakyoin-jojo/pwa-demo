@@ -1,7 +1,7 @@
 {
     "name": "图书搜索",
     "short_name": "书查",
-    "start_url": "/",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#333",
     "description": "一个搜索图书的小WebAPP（基于豆瓣开放接口）",
@@ -35,9 +35,5 @@
         "src": "./img/icons/book-512.png",
         "sizes": "512x512",
         "type": "image/png"
-    }],
-    "background": {
-        "scripts": ["./index.js"]
-    },
-    "permissions": ["background"]
+    }]
 }
